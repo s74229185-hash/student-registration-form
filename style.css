@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37,99,235,0.3);
+}
+
+textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.details {
+    margin-top: 25px;
+    padding: 20px;
+    background: #eff6ff;
+    border-radius: 10px;
+}
+
+.details h2 {
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+.details p {
+    padding: 10px 0;
+    border-bottom: 1px solid #dbeafe;
+    overflow-wrap: anywhere;
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    background: #16a34a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 20px;
+}
+
+.error-box {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.error-box p {
+    margin: 5px 0;
+}
+
+.print-btn {
+    background: #16a34a;
+}
+
+.print-btn:hover {
+    background: #15803d;
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 22px;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .container {
+        box-shadow: none;
+    }
+
+    .print-btn, .back-btn {
+        display: none;
+    }
+}
